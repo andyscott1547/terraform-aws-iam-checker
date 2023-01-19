@@ -1,0 +1,16 @@
+
+
+formatter: markdown table
+
+settings:
+  anchor: false
+  escape: false
+  indent: 4
+
+output:
+  file: ../../README.md
+  mode: inject
+  template: |-
+    <!-- BEGIN_LAMBDA_DOCS -->
+    {{ .Content }}
+    <!-- END_LAMBDA_DOCS -->
